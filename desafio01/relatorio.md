@@ -39,7 +39,7 @@ Abaixo constam os resumos das execuções dos comandos de segurança:
 
 O pipeline automatizado foi executado com sucesso no GitHub Actions:
 
-* **Link da Action de Sucesso:** 
+* **Link da Action de Sucesso:** https://github.com/CADU110/EPS_2026/actions/runs/23880873037 
 
 ## 4. Declaração de Soberania Técnica (CISSP Domain 8)
 
@@ -49,7 +49,7 @@ Eu, **Carlos Eduardo Mota Alves**, declaro que auditei manualmente as ferramenta
 
 ## Observações gerais e específicas
 
-1. O resultado do **Bandit** indica que a análise foi executada sobre a pasta inteira do projeto, incluindo a pasta `.venv`. Para uma auditoria mais fiel ao código da aplicação, recomenda-se excluir o ambiente virtual da varredura, por exemplo com `-x .venv`.
+1. O resultado do **Bandit** indica que a análise foi executada sobre a pasta inteira do projeto, incluindo a pasta `.venv`. 
 2. O **Safety** retornou resultado satisfatório, sem vulnerabilidades conhecidas nas dependências analisadas.
 3. O comando `safety check` está **deprecado**, sendo recomendável atualizar o fluxo para `safety scan`.
 4. O **Ruff** não apontou inconsistências no código analisado, indicando bom nível de conformidade com as regras definidas.
