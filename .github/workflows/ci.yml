@@ -5,6 +5,9 @@ on:
     branches: ["main"]
   pull_request:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   security-checks:
     runs-on: ubuntu-latest
@@ -23,16 +26,26 @@ jobs:
           python-version: "3.12"
 
       - name: Instalar Poetry
-        run: pip install poetry
+        run: |
+          python -m pip install --upgrade pip
+          pip install poetry
+
+      - name: Configurar Poetry para criar .venv no projeto
+        run: |
+          poetry config virtualenvs.in-project true
 
       - name: Instalar dependências
-        run: poetry install
+        run: |
+          poetry install --no-interaction --no-ansi
 
       - name: Rodar Ruff (lint)
-        run: poetry run ruff check .
+        run: |
+          poetry run ruff check .
 
       - name: Rodar Bandit (segurança)
-        run: poetry run bandit -r . -x .venv
+        run: |
+          poetry run bandit -r . -x .venv,__pycache__,tests,docs,dist,build
 
       - name: Rodar Safety (dependências)
-        run: poetry run safety check
+        run: |
+          poetry run safety check
