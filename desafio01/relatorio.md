@@ -39,7 +39,7 @@ Abaixo constam os resumos das execuções dos comandos de segurança:
 
 O pipeline automatizado foi executado com sucesso no GitHub Actions:
 
-* **Link da Action de Sucesso:** [COLE AQUI O LINK DO SEU GITHUB ACTIONS]
+* **Link da Action de Sucesso:** 
 
 ## 4. Declaração de Soberania Técnica (CISSP Domain 8)
 

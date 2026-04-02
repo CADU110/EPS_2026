@@ -30,13 +30,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install poetry
 
-      - name: Configurar Poetry para criar .venv no projeto
+      - name: Configurar Poetry para a venv ficar no projeto
         run: |
           poetry config virtualenvs.in-project true
 
       - name: Instalar dependências
         run: |
-          poetry install --no-interaction --no-ansi
+          poetry install --no-root --no-interaction --no-ansi
 
       - name: Rodar Ruff (lint)
         run: |
