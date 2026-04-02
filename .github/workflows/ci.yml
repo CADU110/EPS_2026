@@ -2,12 +2,16 @@ name: CI - SecOps Pipeline
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
 
 jobs:
   security-checks:
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: desafio01
 
     steps:
       - name: Checkout do código
@@ -19,21 +23,16 @@ jobs:
           python-version: "3.12"
 
       - name: Instalar Poetry
-        run: |
-          pip install poetry
+        run: pip install poetry
 
       - name: Instalar dependências
-        run: |
-          poetry install
+        run: poetry install
 
       - name: Rodar Ruff (lint)
-        run: |
-          poetry run ruff check .
+        run: poetry run ruff check .
 
       - name: Rodar Bandit (segurança)
-        run: |
-          poetry run bandit -r . -x .venv
+        run: poetry run bandit -r . -x .venv
 
       - name: Rodar Safety (dependências)
-        run: |
-          poetry run safety check
+        run: poetry run safety check
