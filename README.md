@@ -26,7 +26,7 @@ Também foi criado um Instagram para documentar as atividades diárias da dupla:
 | Integrante | Matrícula / Identificação |
 |------------|---------------------------|
 | Carlos Eduardo Mota Alves | 221022248 |
-| Samuel Alves | — |
+| Samuel Alves | 202063462 |
 
 ---
 
