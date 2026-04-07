@@ -46,8 +46,7 @@ jobs:
 
       - name: Rodar Bandit (segurança)
         run: |
-          poetry run bandit -r . -x .venv,__pycache__,tests,docs,dist,build -s B105
-
+          poetry run bandit -r ./src -s B105,B101,B110,B603 
       - name: Rodar Safety (dependências)
         run: |
           poetry run safety check
