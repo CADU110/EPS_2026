@@ -2,8 +2,10 @@
 
 # APP 02 PCDF
 
+[![Instagram](https://img.shields.io/badge/Instagram-%40dupla09eps-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](#)
+
 **Repositório da disciplina Engenharia de Produto de Software — 2026.1**  
-**UnB — FCTE Gama**
+**Universidade de Brasília — FCTE Gama**
 
 </div>
 
@@ -13,11 +15,11 @@
 
 Este repositório destina-se à documentação e ao desenvolvimento das atividades da disciplina **Engenharia de Produto de Software**, cursada no semestre **2026.1**, na **Universidade de Brasília — FCTE Gama**.
 
-Também foi criado um instagram para documentar as atividades diarias do dulpla
-@dupla09eps
+Também foi criado um Instagram para documentar as atividades diárias da dupla:
+
+**@dupla09eps**
 
 ---
-
 
 ## 👥 Equipe
 
